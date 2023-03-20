@@ -10,10 +10,8 @@ function eight(number, append,callback) {
   return callback(a,b);
 }//callback이라고 많이 써준다 그래야 나중에 혼돈이 없다.
 //파라미터를 전달 받았다. 매개변수가 꼭 스트링 숫자일 필요 없고 함수일수도 있다.
-
-const a = eight(2, 3,function(a,b){
-return a - b;
-}); // 호출 할 때 결정된다. 인자를 전달 받았다.
+var ye = (a,b) => {return(a + b)};
+const a = eight(2, 3,ye); // *호출 할 때 결정된다. 인자를 전달 받았다.
 console.log(a);
-// console.log(eight(3,4, seven));
-//무엇을 한다음에 하고 싶다면 
+ console.log(eight(3,4, six));
+// ? 무엇을 한다음에 하고 싶다면 
